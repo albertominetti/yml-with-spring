@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: classpath:application-base.yml
+    use-legacy-processing: false
+  application:
+    name: can-read-build-info-in-yml
+

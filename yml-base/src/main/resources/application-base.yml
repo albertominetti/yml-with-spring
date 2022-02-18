@@ -1,0 +1,5 @@
+spring:
+  config:
+    import: optional:classpath:META-INF/build-info.properties
+
+app.version: ${build.version:local}
