@@ -25,7 +25,7 @@ public class YmlWithSpringApplication {
 
     @PostConstruct
     public void setUp() {
-        log.info("Current version of the service is {}", infoVersionFromYaml.getVersion());
+        log.info("Current version of the service is {}, build at {}", infoVersionFromYaml.getVersion(), infoVersionFromYaml.getTime());
         log.info("Version from BuildProperties is {}", buildProperties.getVersion());
     }
 }
